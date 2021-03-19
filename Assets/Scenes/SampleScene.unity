@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205082348}
   - component: {fileID: 205082347}
+  - component: {fileID: 205082349}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -199,12 +200,27 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 205082346}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.91, y: -1.9, z: 0}
+  m_LocalPosition: {x: 6.76, y: -1.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205082349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205082346}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc26e9ceba410be4584ea01c411387c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2040263651}
+  pathFinding: {fileID: 0}
+  beforeTarget: {fileID: 0}
 --- !u!1 &383529503
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,7 +929,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.3
-  far clip plane: 1000
+  far clip plane: 20
   field of view: 60
   orthographic: 1
   orthographic size: 5
@@ -2335,16 +2351,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 737010424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4f7ee1c1bfe45204e8f4495e3d732821, type: 3}
+  m_Script: {fileID: 11500000, guid: 485eb078f42b4434f8986cd1564fee8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   tilemap: {fileID: 1890373829}
-  tilemap2: {fileID: 383529506}
-  enemy: {fileID: 205082348}
-  target: {fileID: 2040263651}
-  colorTileMap: {fileID: 1577247197}
-  colorTile: {fileID: 11400000, guid: cec588c66d753874294c272f9483d9ca, type: 2}
-  pathColor: {r: 0.086931705, g: 0, b: 1, a: 1}
+  pathNodes: []
 --- !u!4 &737010426
 Transform:
   m_ObjectHideFlags: 0
@@ -5115,7 +5126,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 737010425}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: TileMapController, Assembly-CSharp
         m_MethodName: FindPath
         m_Mode: 1
@@ -5241,7 +5252,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040263649}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.64, y: -1.99, z: 0}
+  m_LocalPosition: {x: -6.46, y: -0.84, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

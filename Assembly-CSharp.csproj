@@ -56,10 +56,9 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Heap.cs" />
-    <Compile Include="Assets\TileMapController.cs" />
+    <Compile Include="Assets\EnemyController.cs" />
     <Compile Include="Assets\Node.cs" />
-    <Compile Include="Assets\CustomTile.cs" />
+    <Compile Include="Assets\PathFinding.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TimeFantasy_RPG_Tiles\READ_ME.txt" />
